@@ -14,47 +14,132 @@
 
 <body>
     <h1>Namnsdag</h1>
+   
+<!--Search form for name-->
+        <div class="row">
+            <div class="input-group mb-3 col-md-5">
+                <div class="input-group-prepend">
+                    <label class="input-group-text" for="name">Skriv in ett namn:</label>
+                </div>
 
-    <input type="text" id="name">
-    <select id="country" name="country">
-        <option value="at">Österrike 🇦🇹</option>
-        <option value="cz">Tjeckien 🇨🇿</option>
-        <option value="ge">Tyskland 🇩🇪</option>
-        <option value="dk">Danmark 🇩🇰</option>
-        <option value="es">Spainien 🇪🇸</option>
-        <option value="fi">Finland🇫🇮</option>
-        <option value="fr">Frankrike🇫🇷</option>
-        <option value="hr"> Kroatien 🇭🇷</option>
-        <option value="hu">Ungern 🇭🇺</option>
-        <option value="it">Italien 🇮🇹</option>
-        <option value="pl">Polen 🇵🇱</option>
-        <option value="se">Sverige 🇸🇪</option>
-        <option value="sk">Slovaiken 🇸🇰</option>
-        <option value="us">Usa 🇺🇸</option>
-    </select>
+                <input type="text" class="form-control" id="name" placeholder="t ex Maria">
 
-    <button type="submit" id="submit1" class="btn">Enter</button>
+            </div>
+            
+                <div class=" col-md-6 input-group mb-3">
+                    <div class="input-group-prepend">
+                        <label class="input-group-text" for="country">Välj ett land:</label>
+                    </div>
+                    <select class="custom-select" id="country">
+                        <option value="at">Österrike 🇦🇹</option>
+                        <option value="cz">Tjeckien 🇨🇿</option>
+                        <option value="ge">Tyskland 🇩🇪</option>
+                        <option value="dk">Danmark 🇩🇰</option>
+                        <option value="es">Spanien 🇪🇸</option>
+                        <option value="fi">Finland🇫🇮</option>
+                        <option value="fr">Frankrike🇫🇷</option>
+                        <option value="hr"> Kroatien 🇭🇷</option>
+                        <option value="hu">Ungern 🇭🇺</option>
+                        <option value="it">Italien 🇮🇹</option>
+                        <option value="pl">Polen 🇵🇱</option>
+                        <option value="se">Sverige 🇸🇪</option>
+                        <option value="sk">Slovaiken 🇸🇰</option>
+                        <option value="us">Usa 🇺🇸</option>
+                    </select>
+                </div>
 
-    <select id="countryett" name="country">
-        <option value="at">Österrike 🇦🇹</option>
-        <option value="cz">Tjeckien 🇨🇿</option>
-        <option value="ge">Tyskland 🇩🇪</option>
-        <option value="dk">Danmark 🇩🇰</option>
-        <option value="es">Spainien 🇪🇸</option>
-        <option value="fi">Finland🇫🇮</option>
-        <option value="fr">Frankrike🇫🇷</option>
-        <option value="hr"> Kroatien 🇭🇷</option>
-        <option value="hu">Ungern 🇭🇺</option>
-        <option value="it">Italien 🇮🇹</option>
-        <option value="pl">Polen 🇵🇱</option>
-        <option value="se">Sverige 🇸🇪</option>
-        <option value="sk">Slovaiken 🇸🇰</option>
-        <option value="us">Usa 🇺🇸</option>
-    </select>
-    <input type="number" id="month" placeholder="month">
-    <input type="number" id="day" placeholder="day">
+            <div class="col-md-1">
+                <button type="submit" id="submit1" class="btn btn-primary">Enter</button>
+            </div>
+
+        </div>
+
+
+        <div class="row">
+
+            <div class="col-md-3 input-group mb-3">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="countries">Välj ett land:</label>
+            </div>
+            <select class="custom-select" id="countries">
+                <option value="at">Österrike 🇦🇹</option>
+                <option value="cz">Tjeckien 🇨🇿</option>
+                <option value="ge">Tyskland 🇩🇪</option>
+                <option value="dk">Danmark 🇩🇰</option>
+                <option value="es">Spanien 🇪🇸</option>
+                <option value="fi">Finland🇫🇮</option>
+                <option value="fr">Frankrike🇫🇷</option>
+                <option value="hr"> Kroatien 🇭🇷</option>
+                <option value="hu">Ungern 🇭🇺</option>
+                <option value="it">Italien 🇮🇹</option>
+                <option value="pl">Polen 🇵🇱</option>
+                <option value="se">Sverige 🇸🇪</option>
+                <option value="sk">Slovaiken 🇸🇰</option>
+                <option value="us">Usa 🇺🇸</option>
+            </select>
+            </div>
+            
+            <div class="col-md-3 input-group mb-3">
+                <div class="input-group-prepend">
+                    <label class="input-group-text" for="month">Välj en månad:</label>
+                </div>
+                    <select class="custom-select" id="month">
+                        <option value="1">1 (Januari)</option>
+                        <option value="2">2 (Februari)</option>
+                        <option value="3">3 (Mars)</option>
+                        <option value="4">4 (April)</option>
+                        <option value="5">5 (Maj)</option>
+                        <option value="6">6 (Juni)</option>
+                        <option value="7">7 (Juli)</option>
+                        <option value="8">8 (Augusti)</option>
+                        <option value="9">9 (September)</option>
+                        <option value="10">10 (Oktober)</option>
+                        <option value="11">11 (November)</option>
+                        <option value="12">12 (December)</option>
+                        </select>
+            </div>
+            
+            <div class="col-md-3 input-group mb-3">
+                <div class="input-group-prepend">
+                    <label class="input-group-text" for="Day">Välj en dag:</label>
+                </div>
+                <select class="custom-select" id="day">
+                    <option value="1">1</option>
+                    <option value="2">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                </select>
+            </div>
     
-    <button type="submit" id="s" class="btn">Enter</button>
+            <div class="col-md-1">
+            <button type="submit" id="s" class="btn btn-primary">Enter</button>
+            </div>
 
 
     <script src="assets/script/api.js"></script>

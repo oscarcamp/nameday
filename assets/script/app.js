@@ -1,6 +1,6 @@
-const submit = document.querySelector("#submit1");
 const nameEl = document.querySelector("#name");
 const countryEL = document.querySelector("#country");
+const submit = document.querySelector("#submit1");
 
 
 
@@ -18,7 +18,7 @@ submit.addEventListener('click', async function () {
 
 const monthEL = document.querySelector("#month");
 const dayEL = document.querySelector("#day");
-const countryettEL = document.querySelector("#countryett");
+const countryettEL = document.querySelector("#countries");
 const sEL = document.querySelector("#s");
 
 sEL.addEventListener('click', async function () {
