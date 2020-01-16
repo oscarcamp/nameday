@@ -1,8 +1,14 @@
+//Name function
 const resultHtml = document.querySelector("#resultHtml")
 const resultName = document.querySelector("#resultName")
 const nameEl = document.querySelector("#name");
 const countryEL = document.querySelector("#country");
 const submit = document.querySelector("#submit1");
+//Date function
+const monthEL = document.querySelector("#month");
+const dayEL = document.querySelector("#day");
+const countryettEL = document.querySelector("#countries");
+const sEL = document.querySelector("#s");
 
 
 
@@ -12,6 +18,7 @@ submit.addEventListener('click', function (e) {
     const inputName = nameEl.value;
     const inputCountry = countryEL.value;
 
+    //Function that shows for ther user
     api(inputName, inputCountry)
         .then(infoName => {
             let output = ""
@@ -35,10 +42,7 @@ submit.addEventListener('click', function (e) {
 
 
 
-const monthEL = document.querySelector("#month");
-const dayEL = document.querySelector("#day");
-const countryettEL = document.querySelector("#countries");
-const sEL = document.querySelector("#s");
+
 
 sEL.addEventListener('click', function () {
 
@@ -46,7 +50,7 @@ sEL.addEventListener('click', function () {
     const input2 = monthEL.value;
     const input3 = dayEL.value;
 
-
+//Function that shows for ther user
     api2(input1, input2, input3)
         .then(data => {
             let output = ""
