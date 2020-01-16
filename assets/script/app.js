@@ -1,7 +1,8 @@
-
-const submit = document.querySelector("#submit");
+const submit = document.querySelector("#submit1");
 const nameEl = document.querySelector("#name");
 const countryEL = document.querySelector("#country");
+
+
 
 submit.addEventListener('click', async function () {
 
@@ -13,4 +14,24 @@ submit.addEventListener('click', async function () {
     console.log(info);
 
 });
+
+
+const monthEL = document.querySelector("#month");
+const dayEL = document.querySelector("#day");
+const countryettEL = document.querySelector("#countryett");
+const sEL = document.querySelector("#s");
+
+sEL.addEventListener('click', async function () {
+
+    const input4 = countryettEL.value;
+    const input5 = monthEL.value;
+    const input6 = dayEL.value;
+
+    const response = await fetch(`https://api.abalin.net/namedays?country=${input4}&month=${input5}&day=${input6}`);
+    const info = await response.json()
+    console.log(info);
+
+});
+
+
 
