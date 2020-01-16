@@ -1,8 +1,31 @@
-
-#namn{
+main{
+    background-color:#f1c40f;
+    min-height: 105vh;
+}
+h1, h2, h3, h4, h5, p {
+    color: #2b2e31;
+}
+.h1-namn{
+    margin-bottom: 1.5rem;;
+}
+.namn{
      font-weight: bold;
+    font-style: italic;
 
 }
 .card{
     width: 20rem;
 }
+.namnS{
+    margin-bottom: 5rem;
+}
+.card{
+        margin-top: 2rem;
+    }
+
+@media (max-width: 767.98px) { 
+    .card1{
+        min-height: 25vh;
+    }
+    
+ }

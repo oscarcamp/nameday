@@ -20,14 +20,13 @@ submit.addEventListener('click', function (e) {
                 output = `
                 
                 <div class="card"  id="resultName">
-                    <div class="card-body" style="width: 18rem;">
-                    <h5 class="card-title">På det här datumet:</h5>
-                    <h2 class="text-center"> ${res.day} - ${res.month}</h2>
-
-                    <p class="card-text">Så har <span class="namn">${res.name}</span> namnsdag</p>
+                    <div class="card-body" >
+                        <h5 class="card-title">På det här datumet:</h5>
+                        <h2 class="text-center"> ${res.day} / ${res.month}</h2>
+                        <p class="card-text">Så har <span class="namn">${res.name}</span> namnsdag</p>
 
                     </div>
-                    </div>
+                </div>
               `;
             });
             resultName.innerHTML += output;
@@ -56,13 +55,15 @@ sEL.addEventListener('click', function () {
                 const apiCountry = countryettEL.value;
 
                 output = `
+                <div class="card1">
                 <div class="card"  id="resultName">
-                    <div class="card-body" style="width: 18rem;">
+                    <div class="card-body">
                     <h5 class="card-title">Den här datumen:</h5>
-                    <h2 class="text-center">${datares.dates.day} - ${datares.dates.month}</h2>
+                    <h2 class="text-center">${datares.dates.day} / ${datares.dates.month}</h2>
 
                     <p class="card-text">Så har <span class="namn">${datares.namedays[apiCountry]}</span> namnsdag</p>
 
+                    </div>
                     </div>  
               `;
             });
