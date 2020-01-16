@@ -65,7 +65,7 @@ sEL.addEventListener('click', function () {
                     <h5 class="card-title">Den här datumen:</h5>
                     <h2 class="text-center">${datares.dates.day} / ${datares.dates.month}</h2>
 
-                    <p class="card-text">Så har <span class="namn">${datares.namedays[apiCountry]}</span> namnsdag</p>
+                    <p class="card-text">Har <span class="namn">${datares.namedays[apiCountry]}</span> namnsdag</p>
 
                     </div>
                     </div>  
